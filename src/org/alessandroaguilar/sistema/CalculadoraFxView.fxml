@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="result" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="382.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.alessandroaguilar.sistema.FXMLDocumentController">
+   <children>
+      <TextField fx:id="txtresult" alignment="CENTER_RIGHT" layoutX="51.0" layoutY="54.0" onAction="#handleButtonAction" prefHeight="34.0" prefWidth="266.0" promptText="0" />
+      <GridPane layoutX="51.0" layoutY="136.0" prefHeight="167.0" prefWidth="280.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnsiete" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="68.0" text="7" GridPane.rowIndex="2" />
+            <Button fx:id="btnocho" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="68.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="btnnueve" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="68.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="btnmulti" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="97.0" text="x" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="btncuatro" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="68.0" text="4" GridPane.rowIndex="3" />
+            <Button fx:id="btnuno" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="68.0" text="1" GridPane.rowIndex="4" />
+            <Button fx:id="btncinco" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="68.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="btndos" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="68.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button fx:id="btnseis" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="68.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button fx:id="btntres" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="68.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button fx:id="btnresta" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="96.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button fx:id="btnsuma" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="96.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Button fx:id="btnmasmenos" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="67.0" text="+/-" GridPane.rowIndex="5" />
+            <Button fx:id="btncero" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="67.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button fx:id="btnpunto" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="68.0" text="." GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Button fx:id="btnigual" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="27.0" prefWidth="73.0" text="=" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Button fx:id="btnreset" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="68.0" text="CE" GridPane.rowIndex="1" />
+            <Button fx:id="btnborrar" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="68.0" text="C" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="btndivi" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="97.0" text="/" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="btnporce" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="68.0" text="\%" />
+            <Button fx:id="btnraiz" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="69.0" text="√" GridPane.columnIndex="1" />
+            <Button fx:id="btnpotencia" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="69.0" text="x^" GridPane.columnIndex="2" />
+            <Button fx:id="btnunox" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="76.0" text="1/X" GridPane.columnIndex="3" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
